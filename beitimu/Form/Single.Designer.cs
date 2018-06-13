@@ -63,7 +63,7 @@
             // btnA
             // 
             this.btnA.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnA.Location = new System.Drawing.Point(19, 126);
+            this.btnA.Location = new System.Drawing.Point(20, 125);
             this.btnA.Name = "btnA";
             this.btnA.Size = new System.Drawing.Size(75, 32);
             this.btnA.TabIndex = 1;
@@ -73,7 +73,7 @@
             // 
             // btnB
             // 
-            this.btnB.Location = new System.Drawing.Point(19, 181);
+            this.btnB.Location = new System.Drawing.Point(20, 175);
             this.btnB.Name = "btnB";
             this.btnB.Size = new System.Drawing.Size(75, 32);
             this.btnB.TabIndex = 2;
@@ -83,7 +83,7 @@
             // 
             // btnC
             // 
-            this.btnC.Location = new System.Drawing.Point(19, 227);
+            this.btnC.Location = new System.Drawing.Point(20, 225);
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(75, 32);
             this.btnC.TabIndex = 3;
@@ -93,7 +93,7 @@
             // 
             // btnD
             // 
-            this.btnD.Location = new System.Drawing.Point(19, 273);
+            this.btnD.Location = new System.Drawing.Point(20, 275);
             this.btnD.Name = "btnD";
             this.btnD.Size = new System.Drawing.Size(75, 32);
             this.btnD.TabIndex = 4;
@@ -105,7 +105,7 @@
             // 
             this.lblanswerD.AutoSize = true;
             this.lblanswerD.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblanswerD.Location = new System.Drawing.Point(137, 273);
+            this.lblanswerD.Location = new System.Drawing.Point(135, 275);
             this.lblanswerD.Name = "lblanswerD";
             this.lblanswerD.Size = new System.Drawing.Size(96, 28);
             this.lblanswerD.TabIndex = 5;
@@ -115,7 +115,7 @@
             // 
             this.lblanswerA.AutoSize = true;
             this.lblanswerA.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblanswerA.Location = new System.Drawing.Point(137, 126);
+            this.lblanswerA.Location = new System.Drawing.Point(135, 125);
             this.lblanswerA.Name = "lblanswerA";
             this.lblanswerA.Size = new System.Drawing.Size(96, 28);
             this.lblanswerA.TabIndex = 5;
@@ -125,7 +125,7 @@
             // 
             this.lblanswerB.AutoSize = true;
             this.lblanswerB.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblanswerB.Location = new System.Drawing.Point(137, 174);
+            this.lblanswerB.Location = new System.Drawing.Point(135, 175);
             this.lblanswerB.Name = "lblanswerB";
             this.lblanswerB.Size = new System.Drawing.Size(96, 28);
             this.lblanswerB.TabIndex = 6;
@@ -135,7 +135,7 @@
             // 
             this.lblanswerC.AutoSize = true;
             this.lblanswerC.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblanswerC.Location = new System.Drawing.Point(137, 227);
+            this.lblanswerC.Location = new System.Drawing.Point(135, 225);
             this.lblanswerC.Name = "lblanswerC";
             this.lblanswerC.Size = new System.Drawing.Size(96, 28);
             this.lblanswerC.TabIndex = 7;
@@ -199,7 +199,7 @@
             // 
             // btnE
             // 
-            this.btnE.Location = new System.Drawing.Point(19, 315);
+            this.btnE.Location = new System.Drawing.Point(20, 325);
             this.btnE.Name = "btnE";
             this.btnE.Size = new System.Drawing.Size(75, 32);
             this.btnE.TabIndex = 14;
@@ -209,7 +209,7 @@
             // 
             // btnF
             // 
-            this.btnF.Location = new System.Drawing.Point(19, 360);
+            this.btnF.Location = new System.Drawing.Point(20, 375);
             this.btnF.Name = "btnF";
             this.btnF.Size = new System.Drawing.Size(75, 32);
             this.btnF.TabIndex = 15;
@@ -221,7 +221,7 @@
             // 
             this.lblanswerE.AutoSize = true;
             this.lblanswerE.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblanswerE.Location = new System.Drawing.Point(137, 315);
+            this.lblanswerE.Location = new System.Drawing.Point(135, 325);
             this.lblanswerE.Name = "lblanswerE";
             this.lblanswerE.Size = new System.Drawing.Size(96, 28);
             this.lblanswerE.TabIndex = 16;
@@ -231,7 +231,7 @@
             // 
             this.lblanswerF.AutoSize = true;
             this.lblanswerF.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblanswerF.Location = new System.Drawing.Point(137, 360);
+            this.lblanswerF.Location = new System.Drawing.Point(135, 375);
             this.lblanswerF.Name = "lblanswerF";
             this.lblanswerF.Size = new System.Drawing.Size(96, 28);
             this.lblanswerF.TabIndex = 17;
@@ -250,7 +250,7 @@
             // lblanswer
             // 
             this.lblanswer.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblanswer.Location = new System.Drawing.Point(19, 418);
+            this.lblanswer.Location = new System.Drawing.Point(20, 425);
             this.lblanswer.Name = "lblanswer";
             this.lblanswer.Size = new System.Drawing.Size(100, 35);
             this.lblanswer.TabIndex = 20;

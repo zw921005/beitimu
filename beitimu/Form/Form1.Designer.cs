@@ -41,29 +41,31 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(72, 87);
+            this.button1.Location = new System.Drawing.Point(71, 34);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 51);
             this.button1.TabIndex = 0;
             this.button1.Text = "单选题";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(268, 199);
+            this.button2.Location = new System.Drawing.Point(71, 304);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 51);
             this.button2.TabIndex = 1;
             this.button2.Text = "填空题";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(72, 199);
+            this.button3.Location = new System.Drawing.Point(71, 210);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 51);
             this.button3.TabIndex = 2;
@@ -74,7 +76,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(268, 87);
+            this.button4.Location = new System.Drawing.Point(71, 122);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(109, 51);
             this.button4.TabIndex = 3;
@@ -85,8 +87,6 @@
             // cbAnswer
             // 
             this.cbAnswer.AutoSize = true;
-            this.cbAnswer.Checked = true;
-            this.cbAnswer.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbAnswer.Location = new System.Drawing.Point(506, 385);
             this.cbAnswer.Name = "cbAnswer";
             this.cbAnswer.Size = new System.Drawing.Size(72, 16);

@@ -28,37 +28,47 @@ namespace beitimu
 
         private void Single_Load(object sender, EventArgs e)
         {
-            string fileName;
-            if (IsSingle)
+            int count = 0;
+            try
             {
-                this.Text = "单选题";
-                fileName = "data";
-            }
-            else
-            {
-                this.Text = "多选题";
-                fileName = "data1";
-            }
-            foreach (string line in System.IO.File.ReadLines(fileName, System.Text.Encoding.UTF8))
-            {
-                SelectQuestion sq = new SelectQuestion(line, randomAnswer);
-                sqs.Add(sq);
-            }
-            if (randomQuestion)
-            {
-                Random rd = new Random();
-                for (int i = 0; i < sqs.Count(); i++)
+                string fileName;
+                if (IsSingle)
                 {
-                    int index = rd.Next(sqs.Count());
-                    SelectQuestion temp = sqs[i];
-                    sqs[i] = sqs[index];
-                    sqs[index] = temp;
+                    this.Text = "单选题";
+                    fileName = "data";
                 }
+                else
+                {
+                    this.Text = "多选题";
+                    fileName = "data1";
+                }
+                foreach (string line in System.IO.File.ReadLines(@"data\" + fileName, System.Text.Encoding.UTF8))
+                {
+                    SelectQuestion sq = new SelectQuestion(line, randomAnswer);
+                    sqs.Add(sq);
+                    count++;
+                }
+                if (randomQuestion)
+                {
+                    Random rd = new Random();
+                    for (int i = 0; i < sqs.Count(); i++)
+                    {
+                        int index = rd.Next(sqs.Count());
+                        SelectQuestion temp = sqs[i];
+                        sqs[i] = sqs[index];
+                        sqs[index] = temp;
+                    }
+                }
+                lblresult.Text = "";
+                totalQuestion = sqs.Count();
+                lblPageSize.Text = totalQuestion.ToString();
+                show(sqs[0]);
             }
-            lblresult.Text = "";
-            totalQuestion = sqs.Count();
-            lblPageSize.Text = totalQuestion.ToString();
-            show(sqs[0]);
+            catch (Exception ex)
+            {
+                this.Close();
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public void show(SelectQuestion sq)

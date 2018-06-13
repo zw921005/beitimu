@@ -26,37 +26,45 @@ namespace beitimu
 
         private void Word_Load(object sender, EventArgs e)
         {
-            string fileName;
-            if (IsSingle)
+            try
             {
-                this.Text = "简答题";
-                fileName = "data2";
-            }
-            else
-            {
-                this.Text = "填空题";
-                fileName = "data3";
-            }
-            foreach (string line in System.IO.File.ReadLines(fileName, System.Text.Encoding.UTF8))
-            {
-                wordQuestion wq = new wordQuestion(line);
-                wqs.Add(wq);
-            }
-            if (randomQuestion)
-            {
-                Random rd = new Random();
-                for (int i = 0; i < wqs.Count(); i++)
+                string fileName;
+                if (IsSingle)
                 {
-                    int index = rd.Next(wqs.Count());
-                    wordQuestion temp = wqs[i];
-                    wqs[i] = wqs[index];
-                    wqs[index] = temp;
+                    this.Text = "简答题";
+                    fileName = "data2";
                 }
+                else
+                {
+                    this.Text = "填空题";
+                    fileName = "data3";
+                }
+                foreach (string line in System.IO.File.ReadLines("data/" + fileName, System.Text.Encoding.UTF8))
+                {
+                    wordQuestion wq = new wordQuestion(line);
+                    wqs.Add(wq);
+                }
+                if (randomQuestion)
+                {
+                    Random rd = new Random();
+                    for (int i = 0; i < wqs.Count(); i++)
+                    {
+                        int index = rd.Next(wqs.Count());
+                        wordQuestion temp = wqs[i];
+                        wqs[i] = wqs[index];
+                        wqs[index] = temp;
+                    }
+                }
+                lblresult.Text = "";
+                totalQuestion = wqs.Count();
+                lblPageSize.Text = totalQuestion.ToString();
+                show(wqs[0]);
             }
-            lblresult.Text = "";
-            totalQuestion = wqs.Count();
-            lblPageSize.Text = totalQuestion.ToString();
-            show(wqs[0]);
+            catch (Exception ex)
+            {
+                this.Close();
+                MessageBox.Show(ex.Message);
+            }
         }
 
         void show(wordQuestion wq)
