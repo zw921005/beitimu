@@ -93,6 +93,7 @@
     </EmbeddedResource>
     <None Include="data20180613\data1" />
     <None Include="data20180613\data2" />
+    <None Include="data20180613\十九大知识竞赛题库%28定稿%29.doc" />
     <None Include="Data\data" />
     <None Include="Data\data1" />
     <None Include="Data\data2" />
